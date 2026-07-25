@@ -1,24 +1,24 @@
-# 🎬 Movie Search App
+#  Movie Search App
 
 A modern movie search application built with React and Redux Toolkit using the TMDB API.
 
-## 📸 Preview
+##  Preview
 
 (Add screenshot here)
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔍 Search movies
-- 🎥 View movie details
-- ⭐ Popular movies
-- ⚡ Fast loading
-- 📱 Responsive design
+-  Search movies
+-  View movie details
+-  Popular movies
+-  Fast loading
+-  Responsive design
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - React
 - Redux Toolkit
@@ -29,7 +29,7 @@ A modern movie search application built with React and Redux Toolkit using the T
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ```bash
 npm install
@@ -38,7 +38,7 @@ npm run dev
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -50,6 +50,6 @@ services/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Natthawut Phongtui
