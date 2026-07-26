@@ -53,7 +53,7 @@ src/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/natthawutphongtui-dot/react-movie-project.git
