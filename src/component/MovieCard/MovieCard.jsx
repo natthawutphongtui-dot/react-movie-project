@@ -7,13 +7,14 @@ function Moviecard({ movie }) {
         <div className='card'>
             <div className='card-image'>
                 <img src={movie.Poster} alt={movie.Title} />
+                <div className='card-overlay' />
+                <span className='card-year'>{movie.Year}</span>
             </div>
             <div className='card-content'>
                 <span className='card-title'>{movie.Title}</span>
-                <p>Year: {movie.Year}</p>
-            </div>
-            <div className='card-action'>
-                <Link to={`movie/${movie.imdbID}`}>Read More</Link>
+                <Link to={`movie/${movie.imdbID}`} className='card-action'>
+                    Read More
+                </Link>
             </div>
         </div>
     )

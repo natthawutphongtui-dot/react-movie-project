@@ -1,6 +1,136 @@
-.movie-detail-con{
-    display: flex;
+$bg-dark: #0c0d10;
+$bg-card: #16171b;
+$gold: #e0a939;
+$text-muted: #9a9ba3;
+$text-light: #f2f2f2;
+
+.detail-status {
+    text-align: center;
+    color: $text-muted;
+    margin: 4rem 0;
+    font-weight: 500;
 }
-.movie-detail-img, .movie-detail-info{
-    margin: 2rem;
+
+.movie-detail-page {
+    position: relative;
+    background-color: $bg-dark;
+    color: $text-light;
+    overflow: hidden;
+}
+
+// blurred poster fills the background behind everything, like a streaming hero banner
+.detail-backdrop {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 20%;
+    filter: blur(30px) brightness(0.4);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.movie-detail-con {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.movie-detail-img {
+    flex-shrink: 0;
+    width: 280px;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 20px 40px rgba(#000, 0.5);
+    }
+}
+
+.movie-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+.detail-genre {
+    color: $gold;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.detail-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $text-muted;
+    font-size: 0.9rem;
+
+    .meta-rating {
+        color: $gold;
+        font-weight: 600;
+    }
+}
+
+.detail-plot {
+    color: $text-muted;
+    line-height: 1.7;
+    margin: 1rem 0;
+    max-width: 65ch;
+}
+
+.detail-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba($gold, 0.12);
+
+    div {
+        display: flex;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    strong {
+        color: $text-light;
+        min-width: 80px;
+        flex-shrink: 0;
+    }
+
+    span {
+        color: $text-muted;
+    }
+}
+
+@media (max-width: 640px) {
+    .movie-detail-con {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1.25rem;
+    }
+
+    .movie-detail-img {
+        width: 200px;
+    }
+
+    .detail-meta {
+        justify-content: center;
+    }
+
+    .detail-facts div {
+        justify-content: center;
+    }
 }

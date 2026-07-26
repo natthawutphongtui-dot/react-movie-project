@@ -1,19 +1,39 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Header.scss'
 
 function Header() {
   return (
-    <nav>
-        <div className='container'>
-            <ul className='nav-wrapper'>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="about">About</Link></li>
-                <li><Link to="contact">Contact</Link></li>
-            </ul> 
+    <header className='site-header'>
+      <div className='container'>
+        <div className='nav-wrapper'>
+          <NavLink to="/" className='logo'>
+            <span className='logo-mark'>▶</span>
+            <span className='logo-text'>Cine<em>Vault</em></span>
+          </NavLink>
 
+          <nav>
+            <ul className='nav-links'>
+              <li>
+                <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="about" className={({ isActive }) => isActive ? 'active' : ''}>
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="contact" className={({ isActive }) => isActive ? 'active' : ''}>
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </nav>
+      </div>
+    </header>
   )
 }
 
