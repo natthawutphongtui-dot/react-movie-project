@@ -1,20 +1,29 @@
-#  Movie Search App
+#  CineVault
 
-A modern movie search application built with React and Redux Toolkit using the TMDB API.
+A modern movie search web application built with **React**, **Redux Toolkit**, and **OMDb API**. Users can search for movies, explore details, and enjoy a clean, responsive interface.
+
+##  Live Demo
+
+ https://react-movie-project-4r9e.vercel.app/
+
+---
 
 ##  Preview
 
-(Add screenshot here)
+> Add a screenshot of the homepage here.
+
+![CineVault Preview](./preview.png)
 
 ---
 
 ##  Features
 
--  Search movies
--  View movie details
--  Popular movies
--  Fast loading
--  Responsive design
+-  Search movies by title
+-  View detailed movie information
+-  Fast and responsive user interface
+-  Modern dark theme design
+-  Responsive layout for desktop and mobile
+-  Data powered by OMDb API
 
 ---
 
@@ -25,16 +34,8 @@ A modern movie search application built with React and Redux Toolkit using the T
 - JavaScript
 - Vite
 - CSS
-- TMDB API
-
----
-
-##  Installation
-
-```bash
-npm install
-npm run dev
-```
+- Axios
+- OMDb API
 
 ---
 
@@ -42,16 +43,56 @@ npm run dev
 
 ```
 src/
-components/
-pages/
-redux/
-services/
+├── components/
+├── pages/
+├── redux/
+├── services/
+├── App.jsx
+└── main.jsx
 ```
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/natthawutphongtui-dot/react-movie-project.git
+
+cd react-movie-project
+
+npm install
+
+npm run dev
+```
+
+---
+
+##  API
+
+This project uses the **OMDb API**
+
+https://www.omdbapi.com/
 
 ---
 
 ##  Author
 
-Natthawut Phongtui
-<img width="1904" height="937" alt="image" src="https://github.com/user-attachments/assets/c6ff0129-eddf-4097-a056-edf0ef860ffa" />
+**Natthawut Phongtui**
 
+GitHub:
+https://github.com/natthawutphongtui-dot
+
+---
+
+##  Future Improvements
+
+- Add Favorite Movies
+- Movie Categories
+- Infinite Scroll
+- Dark / Light Theme
+- Better Animations
+- Watchlist Feature
+
+---
+
+If you like this project, don't forget to  this repository!
