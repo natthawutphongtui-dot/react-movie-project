@@ -1,7 +1,7 @@
 import React from 'react'
 import './MovieListing.scss'
 import { useSelector } from 'react-redux'
-import Moviecard from '../MovieCard/Moviecard'
+import Moviecard from '../MovieCard/MovieCard'
 
 function MovieListing() {
 
